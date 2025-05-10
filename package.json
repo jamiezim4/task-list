@@ -1,0 +1,25 @@
+{
+  "name": "task-list",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node ./dist/index.js",
+    "build": "npx prisma generate && npx tsc"
+  },
+  "dependencies": {
+    "@apollo/server": "^4.12.0",
+    "@graphql-yoga/node": "^3.9.1",
+    "@pothos/core": "^4.6.2",
+    "@prisma/client": "^6.7.0",
+    "eslint": "^9.26.0",
+    "graphql": "^16.11.0",
+    "node-http": "^0.0.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.17",
+    "prisma": "^6.7.0",
+    "typescript": "^5.8.3"
+  }
+}
