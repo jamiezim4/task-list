@@ -4,7 +4,12 @@
   "description": "Simple Task List GraphQL API",
   "main": "dist/index.js",
   "type": "module",
+  "engines": {
+    "node": "~>20.14",
+    "npm": "~>10.7"
+  },
   "scripts": {
+    "clean": "rm -r ./dist && rm -r ./node_modules",
     "start": "node ./dist/index.js",
     "build": "npx prisma generate && npx tsc"
   },

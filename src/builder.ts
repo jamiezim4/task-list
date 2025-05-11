@@ -22,8 +22,6 @@ export const builder = new SchemaBuilder<BuilderType>({
       },
     });
 
-// This will create an empty Query {} and Mutation{} type in our SDL 
-// schema. 
 builder.queryType({})
 builder.mutationType({})
 builder.addScalarType('DateTime', DateTimeResolver, {})

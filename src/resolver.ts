@@ -57,28 +57,6 @@ builder.queryField('task', (t) =>
     })
 );
 
-/*
-builder.queryFields((t) => ({
-    task: t.prismaField({
-      type: 'Task',
-      args: {
-        id: t.arg.id({ required: true }),
-      },
-      resolve: async (query, root, args, ctx, info) => {
-        const task = await prisma.task.findUnique({
-            where: {
-              id: args.id,
-            },
-          });
-          if (!task) {
-            return null;
-          }
-          return task;
-      },
-    }),
-  }))
-*/
-
 builder.mutationField('addTask', (t) =>
     t.field({
         type: Task,
