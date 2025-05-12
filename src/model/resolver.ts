@@ -1,5 +1,5 @@
 import { builder } from './builder.js'
-import { prisma } from './db.js';
+import { prisma } from '../data/db.js';
 
 const Task = builder.prismaObject('Task', {
     fields: (t) => ({
